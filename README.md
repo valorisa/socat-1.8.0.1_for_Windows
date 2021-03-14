@@ -8,6 +8,8 @@ Otherwise for the others, there is a ready-made file 'socat-1.7.4.1.rar'.
 
 Download socat source from http://www.dest-unreach.org/socat/
 
+wget http://www.dest-unreach.org/socat/download/socat-1.7.4.1.tar.gz
+
 And from Cygwin 3.1.7 : 
 
 tar -xvzf socat-1.7.4.1.tar.gz
