@@ -5,9 +5,9 @@ Socat 1.7.4.1-x86_64 for Windows
 
 Download socat source from http://www.dest-unreach.org/socat/
 
-tar -xvzf socat-<version>.tar.gz
+tar -xvzf socat-1.7.4.1.tar.gz
 
-cd socat-<version>
+cd socat-1.7.4.1
 
 ./configure
 
