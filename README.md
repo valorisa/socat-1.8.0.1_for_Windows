@@ -22,7 +22,7 @@ Install additional Cygwin packages :
 
 Download socat source from http://www.dest-unreach.org/socat/
 
-From Cygwin 3.1.7 : 
+From Cygwin 3.2.0 : 
 
 wget http://www.dest-unreach.org/socat/download/socat-1.7.4.1.tar.gz
 
