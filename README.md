@@ -1,10 +1,10 @@
 # Socat for Windows
-Socat 1.7.4.1-x86_64 for Windows
-[2021-01-10]
+Socat 1.7.4.2-x86_64 for Windows
+[2022-01-07]
 
 The procedure for those who want to compile from the source files. 
 
-Otherwise for the others, there is a ready-made file 'socat-1.7.4.1.rar'.
+Otherwise for the others, there is a ready-made file 'socat-1.7.4.2.rar'.
 
 First of all, download and install Cygwin : https://www.cygwin.com/setup-x86_64.exe
 
@@ -22,13 +22,13 @@ Install additional Cygwin packages :
 
 Download socat source from http://www.dest-unreach.org/socat/
 
-From Cygwin 3.2.0 : 
+From Cygwin 3.3.3 : 
 
-wget http://www.dest-unreach.org/socat/download/socat-1.7.4.1.tar.gz
+wget http://www.dest-unreach.org/socat/download/socat-1.7.4.2.tar.gz
 
-tar -xvzf socat-1.7.4.1.tar.gz
+tar -xvzf socat-1.7.4.2.tar.gz
 
-cd socat-1.7.4.1
+cd socat-1.7.4.2
 
 ./configure
 
