@@ -1,5 +1,5 @@
-# Socat for Windows
-Socat 1.7.4.2-x86_64 for Windows 10 & 11
+# socat for Windows
+socat 1.7.4.2-x86_64 for Windows 10 & 11
 [2022-01-07]
 
 The procedure for those who want to compile from the source files. 
