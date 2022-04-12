@@ -4,7 +4,7 @@ socat 1.7.4.3-x86_64 for Windows 8.1, 10 & 11
 
 The procedure for those who want to compile from the source files. 
 
-Otherwise for the others, there is a ready-made file 'socat-1.7.4.3.rar'.
+Otherwise for the others, there is a ready-made file **'socat-1.7.4.3.rar'**.
 
 First of all, download and install Cygwin : https://www.cygwin.com/setup-x86_64.exe
 
