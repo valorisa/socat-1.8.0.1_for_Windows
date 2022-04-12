@@ -40,4 +40,4 @@ make install
 
 From Windows Explorer :
 =====================
-Copy 'socat' directory to %ProgramFiles% or an other location.
+Copy 'socat-1.7.4.3' directory to %ProgramFiles% or an other location.
