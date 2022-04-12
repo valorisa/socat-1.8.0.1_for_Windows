@@ -40,4 +40,4 @@ make install
 
 From Windows Explorer :
 =====================
-With WinRAR (socat-1.7.4.3.tar.gz), copy 'socat' directory to %ProgramFiles% or an other location.
+Copy 'socat' directory to %ProgramFiles% or an other location.
