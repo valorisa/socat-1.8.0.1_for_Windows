@@ -26,7 +26,7 @@ Download socat source from http://www.dest-unreach.org/socat/
 From Cygwin 3.3.4 : 
 =================
 
-run Cygwin and execute the following commands : 
+run **Cygwin** and execute the following commands : 
 
 cd / &&  cd cygdrive/c/Users/'your_username'/Desktop
 
