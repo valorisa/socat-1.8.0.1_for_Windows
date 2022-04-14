@@ -26,6 +26,10 @@ Download socat source from http://www.dest-unreach.org/socat/
 From Cygwin 3.3.4 : 
 =================
 
+run Cygwin and execute the following commands : 
+
+cd / &&  cd cygdrive/c/Users/'your_username'/Desktop
+
 wget http://www.dest-unreach.org/socat/download/socat-1.7.4.3.tar.gz
 
 tar -xvzf socat-1.7.4.3.tar.gz
