@@ -6,7 +6,7 @@ The procedure for those who want to compile from the source files.
 
 Otherwise for the others, there is a ready-made file **'socat-1.7.4.3.rar'**.
 
-First of all, download and install Cygwin : https://www.cygwin.com/setup-x86_64.exe
+First of all, download and install Cygwin (last version) : https://www.cygwin.com/setup-x86_64.exe
 
 Install additional Cygwin packages :
 ==================================
@@ -21,9 +21,9 @@ Install additional Cygwin packages :
 
 – make
 
-Download socat source from http://www.dest-unreach.org/socat/
+Please, don't forget to download socat source from http://www.dest-unreach.org/socat/
 
-From Cygwin 3.3.4 : 
+From Cygwin 3.3.5 : 
 =================
 
 run **Cygwin** and execute the following commands : 
