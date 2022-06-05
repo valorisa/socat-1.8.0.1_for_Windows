@@ -1,4 +1,4 @@
-# socat-1.7.4.3 for Windows
+# socat-1.7.4.3 for Windows 10 & 11
 socat 1.7.4.3-x86_64 for Windows 7, 8.1, 10 & 11 & Server
 [2022-12-04]
 
