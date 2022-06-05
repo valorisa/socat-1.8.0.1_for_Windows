@@ -6,7 +6,7 @@ The procedure for those who want to compile from the source files.
 
 Otherwise for the others, there is a ready-made file **'socat-1.7.4.3.rar'**.
 
-First of all, download and install Cygwin (last version) : https://www.cygwin.com/setup-x86_64.exe
+First of all, if it is not done yet, download and install Cygwin (last version) : https://www.cygwin.com/setup-x86_64.exe
 
 Install additional Cygwin packages :
 ==================================
@@ -44,4 +44,4 @@ make install
 
 From Windows Explorer :
 =====================
-Copy 'socat-1.7.4.3' directory to %ProgramFiles% or an other location.
+After compilation, copy 'socat-1.7.4.3' directory to %ProgramFiles% or an other location.
