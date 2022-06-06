@@ -44,4 +44,4 @@ make install
 
 From Windows Explorer :
 =====================
-After compilation, copy 'socat-1.7.4.3' directory to %ProgramFiles% or an other location.
+After compilation, copy 'socat-1.7.4.3' directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
