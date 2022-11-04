@@ -21,23 +21,23 @@ Install additional Cygwin packages :
 
 – make
 
-- gcc-fortran
+– gcc-fortran
 
-- gcc-objc
+– gcc-objc
 
-- gcc-objc++
+– gcc-objc++
 
-- libkrb5-devel
+– libkrb5-devel
 
-- libkrb5_3
+– libkrb5_3
 
-- libreadline-devel
+– libreadline-devel
 
-- libssl-devel
+– libssl-devel
 
-- libwrap-devel
+– libwrap-devel
 
-- tcp_wrappers
+– tcp_wrappers
 
 Please, don't forget to download socat source from http://www.dest-unreach.org/socat/
 
