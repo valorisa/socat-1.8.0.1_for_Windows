@@ -46,7 +46,7 @@ From Cygwin 3.3.6 :
 
 run **Cygwin** and execute the following commands : 
 
-cd / &&  cd cygdrive/c/Users/'your_username'/Desktop
+cd / &&  cd cygdrive/c/Users/<your_username>/Desktop
 
 wget http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
 
