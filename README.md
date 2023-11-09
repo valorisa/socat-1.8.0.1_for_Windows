@@ -8,6 +8,16 @@ line editor (readline), a program, or a combination of two of these.
 These modes include generation of "listening" sockets, named pipes, and pseudo
 terminals.
 
+Some of the examples of using socat are :
+- TCP relay (one-shot or daemon)
+- External socksifier
+- Shell interface to Unix sockets
+- IPv6 relay
+- Netcat and rinetd replacement
+- Redirecting TCP-oriented programs to a serial line
+- Establishing a relatively secure environment (su and chroot) for running client or server shell scripts inside network connections.
+  
+
 # socat-1.7.4.4 for Windows 10 & 11
 socat 1.7.4.4-x86_64 for Windows 7, 8.1, 10 & 11 & Server
 [2022-04-11]
