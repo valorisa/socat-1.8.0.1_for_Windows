@@ -20,7 +20,7 @@ Some of the examples of using socat are :
  http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES
   
 
-# socat-1.7.4.4 for Windows 10 & 11
+# socat-1.8.0.0 for Windows 10 & 11
 socat 1.8.0.0-x86_64 for Windows 7, 8.1, 10 & 11 & Server
 [2023-30-11]
 
