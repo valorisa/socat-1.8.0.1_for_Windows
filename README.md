@@ -83,3 +83,19 @@ From Windows Explorer
 =====================
 
 After compilation, copy 'socat-1.8.0.0' directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
+
+
+Addendum
+========
+from the Mugane's comment :
+
+May also want to add that it is best to use Powershell (as Admin) to install these packages for cygwin if using cyg-get:
+```
+cyg-get gcc-g++ gcc-core make gcc-fortran gcc-objc gcc-objc++ libkrb5-devel libkrb5_3 libreadline-devel libssl-devel libwrap-devel tcp_wrappers
+```
+If you don't use powershell, and try to install from cygwin itself (even as Administrator) you may run into gnarly cryptic missing dll errors and end up needing to remove/reinstall cygwin itself to correct the problems.
+
+If users don't have cygwin, I recommend [chocolatey](https://chocolatey.org/install) (again from Powershell as admin):
+```
+choco install -y cygwin cyg-get
+```
