@@ -60,7 +60,7 @@ Install additional Cygwin packages
 
 Please, don't forget to download socat source from <http://www.dest-unreach.org/socat/>
 
-From Cygwin 3.4.9
+From Cygwin 3.5.0
 =================
 
 run **Cygwin** and execute the following commands :
