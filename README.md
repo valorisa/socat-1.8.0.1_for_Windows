@@ -38,6 +38,10 @@ Install additional Cygwin packages
 
 – gcc-core
 
+- cygwin32-gcc-g++
+
+- cygwin32-gcc-core
+
 – make
 
 – gcc-fortran
