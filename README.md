@@ -64,7 +64,7 @@ Install additional Cygwin packages
 
 Please, don't forget to download socat source from <http://www.dest-unreach.org/socat/>
 
-From Cygwin 3.5.0
+From Cygwin 3.5.1
 =================
 
 run **Cygwin** and execute the following commands :
