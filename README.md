@@ -91,7 +91,7 @@ After compilation, copy 'socat-1.8.0.0' directory to %ProgramFiles% or an other 
 
 Addendum
 ========
-from the Mugane's comment :
+From the Mugane's comment :
 
 May also want to add that it is best to use Powershell (as Admin) to install these packages for cygwin if using cyg-get:
 ```
