@@ -67,7 +67,7 @@ Please, don't forget to download socat source from <http://www.dest-unreach.org/
 From Cygwin 3.5.1
 =================
 
-run **Cygwin** and execute the following commands :
+run **Cygwin** via (Windows + R, 'mintty')  and execute the following commands :
 ```bash
 cd / &&  cd cygdrive/c/Users/<your_username>/Desktop
 
