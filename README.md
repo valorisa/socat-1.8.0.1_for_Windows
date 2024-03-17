@@ -27,7 +27,7 @@ socat 1.8.0.0-x86_64 for Windows 7, 8.1, 10 & 11 & Server
 
 The procedure for those who want to compile from the source files.
 
-Otherwise for the others, there is a ready-made file **'socat-1.8.0.0.rar'**.
+Otherwise for the others, there is 2 ready-made files **'socat-1.8.0.0.rar'** and **'socat-1.8.0.0.zip'**.
 
 First of all, if it is not done yet, download and install Cygwin (last version) : <https://www.cygwin.com/setup-x86_64.exe>
 
