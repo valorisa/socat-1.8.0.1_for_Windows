@@ -71,7 +71,7 @@ run **Cygwin** via (Windows + R, 'mintty')  and execute the following commands :
 ```bash
 cd / &&  cd cygdrive/c/Users/<your_username>/Desktop
 
-wget <http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz>
+wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 
 tar -xvzf socat-1.8.0.0.tar.gz
 
