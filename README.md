@@ -68,7 +68,7 @@ From Cygwin 3.5.1
 =================
 
 run **Cygwin** and execute the following commands :
-
+```bash
 cd / &&  cd cygdrive/c/Users/<your_username>/Desktop
 
 wget <http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz>
@@ -82,7 +82,7 @@ cd socat-1.8.0.0
 make
 
 make install
-
+```
 From Windows Explorer
 =====================
 
