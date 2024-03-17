@@ -1,3 +1,6 @@
+
+# File with heading
+
 ![Screenshot_2023-11-08-23-38-22-47_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/valorisa/socat-1.7.4.4_for_Windows/assets/13067566/c562ce4c-64e6-463b-8863-e9dd8e30d053)
 
 socat is a relay for bidirectional data transfer between two independent data
@@ -88,18 +91,21 @@ From Windows Explorer
 
 After compilation, copy 'socat-1.8.0.0' directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
 
-
 Addendum
 ========
+
 From the Mugane's comment :
 
 May also want to add that it is best to use Powershell (as Admin) to install these packages for cygwin if using cyg-get:
-```
+
+```bash
 cyg-get gcc-g++ gcc-core make gcc-fortran gcc-objc gcc-objc++ libkrb5-devel libkrb5_3 libreadline-devel libssl-devel libwrap-devel tcp_wrappers
 ```
+
 If you don't use powershell, and try to install from cygwin itself (even as Administrator) you may run into gnarly cryptic missing dll errors and end up needing to remove/reinstall cygwin itself to correct the problems.
 
 If users don't have cygwin, I recommend [chocolatey](https://chocolatey.org/install) (again from Powershell as admin):
-```
+
+```bash
 choco install -y cygwin cyg-get
 ```
