@@ -86,7 +86,7 @@ make install
 
 ## 3) **From Windows Explorer**
 
-After compilation, copy * *'socat-1.8.0.0'* * directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
+After compilation, copy _'socat-1.8.0.0'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
 
 ## 4) **Addendum**
 
