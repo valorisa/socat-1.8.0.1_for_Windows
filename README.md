@@ -74,7 +74,7 @@ Please, don't forget to download socat source from <http://www.dest-unreach.org/
 Run **Cygwin** via (Windows + R, 'mintty') and execute the following commands :
 
 ```bash
-cd / &&  cd cygdrive/c/Users/<your_username>/Desktop [or cd / &&  cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')]
+cd / && cd cygdrive/c/Users/<your_username>/Desktop [or cd / && cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')]
 
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 
