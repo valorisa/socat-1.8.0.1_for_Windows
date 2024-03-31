@@ -34,7 +34,7 @@ You can download it by going to : <https://github.com/valorisa/socat-1.8.0.0_for
 
 First of all, if it is not done yet, download and install Cygwin (last version) : <https://www.cygwin.com/setup-x86_64.exe>
 
-## 1) **Install additional Cygwin packages**
+## 1. **Install additional Cygwin packages**
 
 – gcc-g++
 
@@ -67,14 +67,14 @@ First of all, if it is not done yet, download and install Cygwin (last version) 
 To do this, let us try to answer the following question : How to do install packages on Cygwin ?
 Download the Cygwin installer and run setup.exe. Click Next through the defaults and select mirror for downloading packages. Search for each package, open the appropriate category (by example Net or PHP or other), and click Skip next to each package to select it for installation.
 
-## 2) **From Cygwin 3.5.1**
+## 2. **From Cygwin 3.5.1**
 
 Please, don't forget to download socat source from <http://www.dest-unreach.org/socat/>
 
 Run **Cygwin** via (Windows + R, 'mintty') and execute the following commands :
 
 ```bash
-cd / &&  cd cygdrive/c/Users/<your_username>/Desktop (or cd / &&  cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')
+cd / &&  cd cygdrive/c/Users/<your_username>/Desktop [or cd / &&  cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')]
 
 wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 
@@ -89,11 +89,11 @@ make
 make install
 ```
 
-## 3) **From Windows Explorer**
+## 3. **From Windows Explorer**
 
 After compilation, copy _'socat-1.8.0.0'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
 
-## 4) **Addendum**
+## 4. **Addendum**
 
 From the Mugane's comment :
 
