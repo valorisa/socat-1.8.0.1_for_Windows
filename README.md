@@ -70,7 +70,8 @@ Download the Cygwin installer and run setup.exe. Click Next through the defaults
 ## 2) **From Cygwin 3.5.1**
 
 Please, don't forget to download socat source from <http://www.dest-unreach.org/socat/>
-run **Cygwin** via (Windows + R, 'mintty')  and execute the following commands :
+
+Run **Cygwin** via (Windows + R, 'mintty') and execute the following commands :
 
 ```bash
 cd / &&  cd cygdrive/c/Users/<your_username>/Desktop (or cd / &&  cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')
