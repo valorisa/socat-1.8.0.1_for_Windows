@@ -1,0 +1,10 @@
+{
+    "MD003": {
+        "style": "atx"
+    },
+    "MD013": {
+        "line_length": 198,
+        "code_block_line_length": 198
+    },
+    "MD046": true
+}

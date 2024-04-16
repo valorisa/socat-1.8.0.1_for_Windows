@@ -1,12 +1,10 @@
-
-about
------
+# about
 
 socat is a relay for bidirectional data transfer between two independent data
 channels. Each of these data channels may be a file, pipe, device (serial line
 etc. or a pseudo terminal), a socket (UNIX, IP4, IP6 - raw, UDP, TCP), an
 SSL socket, proxy CONNECT connection, a file descriptor (stdin etc.), the GNU
-line editor (readline), a program, or a combination of two of these. 
+line editor (readline), a program, or a combination of two of these.
 These modes include generation of "listening" sockets, named pipes, and pseudo
 terminals.
 
@@ -15,7 +13,7 @@ external socksifier, for attacking weak firewalls, as a shell interface to UNIX
 sockets, IP6 relay, for redirecting TCP oriented programs to a serial line, to
 logically connect serial lines on different computers, or to establish a
 relatively secure environment (su and  chroot) for running client or server
-shell scripts with network connections. 
+shell scripts with network connections.
 
 Many options are available to refine socats behaviour:
 terminal parameters, open() options, file permissions, file and process owners,
@@ -32,18 +30,14 @@ In fact, many of these features already exist in specialized tools; but until
 now, there does not seem to exists another tool that provides such a generic,
 flexible, simple and almost comprehensive (UNIX) byte stream connector.
 
-
-packages
---------
+## packages
 
 before bothering with compilers, dependencies and include files, you might
-try to get a binary distribution that matches your platform. Have a look at 
-the projects home page for actual information regarding socat binary 
+try to get a binary distribution that matches your platform. Have a look at
+the projects home page for actual information regarding socat binary
 distributions.
 
-
-platforms
----------
+## platforms
 
 socat 1.8.0 was compiled and more or less successfully tested under the
 following operating systems:
@@ -57,44 +51,42 @@ Ubuntu 12..22
 Rocky 9
 Cygwin 10.0
 
-
-install
--------
+## install
 
 Get the tarball and extract it :
+
+```zsh
+ tar xzf socat.tar.gz
+ cd socat-1.8.0.0
+ ./configure
+ make
+ su
+ make install # installs socat, filan, and procan in /usr/local/bin
 ```
-	tar xzf socat.tar.gz
-	cd socat-1.8.0.0
-	./configure
-	make
-	su
-	make install	# installs socat, filan, and procan in /usr/local/bin
-```
- 
 
 For compiling socat, gcc (or clang) is recommended.
 If gcc (or a compiler with similar front end) is not available, the configure
 script might fail to determine some features
 
 If you have problems with the OpenSSL library, you can apply the option
-"```--disable-openssl```" to configure.
+"--disable-openssl" to configure.
 
 If you have problems with the readline library or (n)curses, you can apply the
-option "```--disable-readline```" to configure.
+option "--disable-readline" to configure.
 
 If you have problems with the tcp wrappers library, you can apply the option
-"```--disable-libwrap```" to configure.
+"--disable-libwrap" to configure.
 
-If you still get errors or a tremendous amount of warnings you can exclude 
+If you still get errors or a tremendous amount of warnings you can exclude
 the features for system call tracing and file descriptor analyzing by
-applying the options "```--disable-sycls --disable-filan```" to configure.
+applying the options "--disable-sycls --disable-filan" to configure.
 
 You still need the functions vsnprintf and snprintf that are in the GNU libc,
 but might not be available with some proprietary libc's.
 
 The configure script looks for headers and libraries of openssl, readline, and
 tcp wrappers in the OS'es standard places and in the subdirectories include/
-and lib/ of the following places : 
+and lib/ of the following places:
    /sw/
    /usr/local/
    /opt/freeware/
@@ -110,56 +102,48 @@ the /usr/include/... header and will therefore expect libssl in /usr/lib
 instead of /usr/local/...
 
 If configure does not find a header file or library but you know where it is,
-you can specify additional search locations, e.g. :
-   ```
-export LIBS="-L$HOME/lib"
+you can specify additional search locations, e.g.:
+   export LIBS="-L$HOME/lib"
    export CPPFLAGS="-I$HOME/include"
-```
 before running configure and make.
 
 For other operating systems, if socat does not compile without errors, refer to
 the file PORTING.
 
-
-platform specifics - Debian (Ubuntu, ...)
------------------------------------------
+## platform specifics - Debian (Ubuntu, ...)
 
 libssl-dev
 
+## platform specifics - redhat
 
-platform specifics - redhat
----------------------------
-
-Install the following packages before building socat :
+Install the following packages before building socat:
   tcp_wrappers-devel
   readline-devel
   openssl-devel
 
 On RedHat Linux 9.0, including openssl/ssl.h might fail due to problems with
-the krb5-devel package. configure reacts with disabling openssl integration. 
+the krb5-devel package. configure reacts with disabling openssl integration.
 To solve this issue, help cpp to find the krb5.h include file:
 CPPFLAGS="-I/usr/kerberos/include" ./configure
 
-
-platform specifics - aix
-------------------------
+## platform specifics - aix
 
 The flock() prototype is not available but the function is. Thus, to enable the
-socat flock options, run configure and then change in config.h the line 
-/* #undef HAVE_FLOCK */
+socat flock options, run configure and then change in config.h the line
+*#undef HAVE_FLOCK*
 to
-#define HAVE_FLOCK 1
+*#define HAVE_FLOCK 1*
 and continue the build process.
 
-When using the OpenSSL rpm provided by IBM, configure might need the 
-environment variable setting :
+When using the OpenSSL rpm provided by IBM, configure might need the
+environment variable setting:
 LIBS="-L/opt/freeware/lib"
 
 When using the OpenSSL bundle provided by IBM, egd needs to be installed too
 to get enough entropy.
 
 socat compiles not only with gcc, but also with xlc. Just adapt the Makefile:
-replace gcc by /usr/vac/bin/xlc and remove gcc specific options 
+replace gcc by /usr/vac/bin/xlc and remove gcc specific options
 "-Wall -Wno-parentheses".
 
 When linking with the OpenSSL library provided by IBM, errors may occur:
@@ -170,9 +154,7 @@ xlc, or disable SSL (in config.h, undefine WITH_OPENSSL and recompile)
 The score of test.sh can be improved by uncommenting MISCDELAY=1 in this
 script.
 
-
-platform specifics - solaris
-----------------------------
+## platform specifics - solaris
 
 If libreadline or libssl are in a directory not searched by the loader per
 default, e.g. /opt/sfw/lib, you must add this directory to $LD_LIBRARY_PATH,
@@ -182,15 +164,13 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/sfw/lib
 For some shell scripts, it is preferable to have /usr/xpg4/bin at a prominent
 position in $PATH.
 
-With the default compiler define _GNU_SOURCE, the CMSG_* macros are not
+With the default compiler define *_GNU_SOURCE*, the CMSG_* macros are not
 available, and therefore ancillary messages cannot be used. To enable these try
 the following:
 After running ./configure, edit Makefile and replace "-D_GNU_SOURCE" with
 "-D_XPG4_2 -D__EXTENSIONS__" and run make
 
-
-platform specifics - hp-ux
---------------------------
+## platform specifics - hp-ux
 
 Ancillary messages cannot be compiled in with socat: both struct msghdr and
 struct cmsghdr are required. Compiling with -D_XOPEN_SOURCE_EXTENDED provides
@@ -211,20 +191,16 @@ UNIX domain sockets are only supported with SOCK_STREAM, not with datagrams
 With UDP sockets it seems to happen that the select() call reports available
 data (or EOF) but a subsequent read() call hangs.
 
-
-platform specifics - tru64
---------------------------
+## platform specifics - tru64
 
 When the use of the readline address fails with an error like:
 socat: /sbin/loader: Fatal Error: Reference to unresolvable symbol "tgetent" in ".../libreadline.so.4"
-and you still want to use shared libraries, try the following workaround: 
+and you still want to use shared libraries, try the following workaround:
 $ make distclean; LIBS="-static" ./configure
 remove the "-static" occurrence in Makefile
 $ make
 
-
-documentation
--------------
+## documentation
 
 These files reside in the doc subdirectory:
 
@@ -239,12 +215,10 @@ doc/socat-tun shows how to build a virtual network between two hosts.
 socat.1 and socat.html can be generated from socat.yo (which is released with
 socat 1.6.0.1 and later) using the yodl document language package. Maintenance
 of yodl had been discontinued by its author
-(http://www.xs4all.nl/~jantien/yodl/) (there seems to be a revival at
-http://yodl.sourceforge.net/ though). For socat, the revival version 3.03 is used,
+(<http://www.xs4all.nl/~jantien/yodl/>) (there seems to be a revival at
+<http://yodl.sourceforge.net/> though). For socat, the revival version 3.03 is used,
 
-
-license
--------
+## license
 
 socat is distributed under the terms of the GNU GPLv2;
 except for install-sh, which is copyright MIT, with its own license;
@@ -261,10 +235,8 @@ exception to your version of the file, but you are not
 obligated to do so. If you do not wish to do so, delete
 this exception statement from your version.
 
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, version 2 of the License
+```ruby
+    This program is free software ; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2 of the License.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -274,19 +246,18 @@ this exception statement from your version.
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+```
 
-
-contact
--------
+## contact
 
 For questions, bug reports, ideas, contributions etc. please contact
-socat@dest-unreach.org
+<socat@dest-unreach.org>
 
 For socat source distribution, bug fixes, and latest news see
-        http://www.dest-unreach.org/socat/
+        <http://www.dest-unreach.org/socat/>
 
-www.socat.org is an alternate site providing the same contents.
+<www.socat.org> is an alternate site providing the same contents.
 
 public git repository:
-	git://repo.or.cz/socat.git
-	http://repo.or.cz/socat.git
+ git://repo.or.cz/socat.git
+ <http://repo.or.cz/socat.git>
