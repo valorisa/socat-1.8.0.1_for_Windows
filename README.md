@@ -91,7 +91,7 @@ make install
 
 ## 3. **From Windows Explorer**
 
-After compilation, copy _'socat-1.8.0.1'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
+After compilation, copy _'socat-1.8.0.1'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work. Caution : Add the Socat's path from environment variables, with (Windows + R, 'sysdm.cpl', advanced system settings). Close 'mintty' and reopen it.
 
 Note (from 'mintty' [cygwin] to verify the version number) : 
 ```bash
