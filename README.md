@@ -93,6 +93,59 @@ make install
 
 After compilation, copy _'socat-1.8.0.1'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
 
+Note (from 'mintty' [cygwin] to verify the version number) : 
+```bash
+$ socat -V
+socat by Gerhard Rieger and contributors - see www.dest-unreach.org
+socat version 1.8.0.1 on Aug 24 2024 21:18:20
+   running on CYGWIN_NT-10.0-26100 version 2024-04-03 17:25 UTC, release 3.5.3-1.x86_64, machine x86_64
+features:
+  #define WITH_HELP 1
+  #define WITH_STATS 1
+  #define WITH_STDIO 1
+  #define WITH_FDNUM 1
+  #define WITH_FILE 1
+  #define WITH_CREAT 1
+  #define WITH_GOPEN 1
+  #define WITH_TERMIOS 1
+  #define WITH_PIPE 1
+  #define WITH_SOCKETPAIR 1
+  #define WITH_UNIX 1
+  #undef WITH_ABSTRACT_UNIXSOCKET
+  #define WITH_IP4 1
+  #define WITH_IP6 1
+  #define WITH_RAWIP 1
+  #define WITH_GENERICSOCKET 1
+  #undef WITH_INTERFACE
+  #define WITH_TCP 1
+  #define WITH_UDP 1
+  #undef WITH_SCTP
+  #undef WITH_DCCP
+  #undef WITH_UDPLITE
+  #define WITH_LISTEN 1
+  #undef WITH_POSIXMQ
+  #define WITH_SOCKS4 1
+  #define WITH_SOCKS4A 1
+  #define WITH_SOCKS5 1
+  #undef WITH_VSOCK
+  #undef WITH_NAMESPACES
+  #define WITH_PROXY 1
+  #define WITH_SYSTEM 1
+  #define WITH_SHELL 1
+  #define WITH_EXEC 1
+  #define WITH_READLINE 1
+  #undef WITH_TUN
+  #define WITH_PTY 1
+  #define WITH_OPENSSL 1
+  #undef WITH_FIPS
+  #define WITH_LIBWRAP 1
+  #define WITH_SYCLS 1
+  #define WITH_FILAN 1
+  #define WITH_RETRY 1
+  #undef WITH_DEVTESTS
+  #define WITH_MSGLEVEL 0 /*debug*/
+  #define WITH_DEFAULT_IPV 4
+```
 ## 4. **Addendum**
 
 From the Mugane's comment :
