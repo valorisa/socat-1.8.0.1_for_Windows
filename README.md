@@ -30,7 +30,7 @@ socat 1.8.0.1-x86_64 for Windows 7, 8.1, 10 & 11 & Server
 The procedure for those who want to compile from the source files.
 
 Otherwise for the others, there is one ready-made file **'socat-1.8.0.1.7z'**.
-You can download it by going to : [socat-1.8.0.1.7z](https://github.com/valorisa/socat-1.8.0.0_for_Windows/blob/main/socat-1.8.0.1.7z) and proceeding by keyboard shortcut (Ctrl + Shift + s).
+You can download it by going to : [socat-1.8.0.1.7z](https://github.com/valorisa/socat-1.8.0.1_for_Windows/blob/main/socat-1.8.0.1.7z) and proceeding by keyboard shortcut (Ctrl + Shift + s).
 
 First of all, if it is not done yet, download and install Cygwin (last version) : <https://www.cygwin.com/setup-x86_64.exe>
 
