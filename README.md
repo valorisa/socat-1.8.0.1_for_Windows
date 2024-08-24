@@ -22,15 +22,15 @@ Some of the examples of using socat are :
 
  <http://www.dest-unreach.org/socat/doc/socat.html#EXAMPLES>
   
-## socat-1.8.0.0 for Windows 7, 8.1, 10 & 11 & Server
+## socat-1.8.0.1 for Windows 7, 8.1, 10 & 11 & Server
 
-socat 1.8.0.0-x86_64 for Windows 7, 8.1, 10 & 11 & Server
-[2023-30-11]
+socat 1.8.0.1-x86_64 for Windows 7, 8.1, 10 & 11 & Server
+[2024-24-08]
 
 The procedure for those who want to compile from the source files.
 
-Otherwise for the others, there are 2 ready-made files **'socat-1.8.0.0.rar'** and **'socat-1.8.0.0.zip'**.
-You can download it by going to : [socat-1.8.0.0.rar](https://github.com/valorisa/socat-1.8.0.0_for_Windows/blob/main/socat-1.8.0.0.rar) or [socat-1.8.0.0.zip](https://github.com/valorisa/socat-1.8.0.0_for_Windows/blob/main/socat-1.8.0.0.zip) and proceeding by keyboard shortcut (Ctrl + Shift + s).
+Otherwise for the others, there is one ready-made file **'socat-1.8.0.1.7z'**.
+You can download it by going to : [socat-1.8.0.1.7z](https://github.com/valorisa/socat-1.8.0.0_for_Windows/blob/main/socat-1.8.0.1.7z) and proceeding by keyboard shortcut (Ctrl + Shift + s).
 
 First of all, if it is not done yet, download and install Cygwin (last version) : <https://www.cygwin.com/setup-x86_64.exe>
 
@@ -76,11 +76,11 @@ Run **Cygwin** via (Windows + R, 'mintty') and execute the following commands :
 ```bash
 cd / && cd cygdrive/c/Users/<your_username>/Desktop [or cd / && cd %USERPROFILE%/Desktop if you use (Windows + R, 'cmd')]
 
-wget http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
+wget http://www.dest-unreach.org/socat/download/socat-1.8.0.1.tar.gz
 
-tar -xvzf socat-1.8.0.0.tar.gz
+tar -xvzf socat-1.8.0.1.tar.gz
 
-cd socat-1.8.0.0
+cd socat-1.8.0.1
 
 ./configure
 
@@ -91,7 +91,7 @@ make install
 
 ## 3. **From Windows Explorer**
 
-After compilation, copy _'socat-1.8.0.0'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
+After compilation, copy _'socat-1.8.0.1'_ directory to %ProgramFiles% or an other location. You have to copy the directory totally and not only 'socat.exe', otherwise it won't work.
 
 ## 4. **Addendum**
 
