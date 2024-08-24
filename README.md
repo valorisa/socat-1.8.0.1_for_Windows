@@ -25,7 +25,7 @@ Some of the examples of using socat are :
 ## socat-1.8.0.1 for Windows 7, 8.1, 10 & 11 & Server
 
 socat 1.8.0.1-x86_64 for Windows 7, 8.1, 10 & 11 & Server
-[2024-24-08]
+[2024-08-24]
 
 The procedure for those who want to compile from the source files.
 
