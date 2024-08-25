@@ -1,5 +1,5 @@
 
-####################### V 1.8.0.1:
+####################### V 1.8.0.1 :
 
 Corrections:
 	When no IP version was preferred by environment, option -4/-6, or
