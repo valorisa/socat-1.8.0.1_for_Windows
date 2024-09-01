@@ -67,7 +67,7 @@ First of all, if it is not done yet, download and install Cygwin (last version) 
 To do this, let us try to answer the following question : How to do install packages on Cygwin ?
 Download the Cygwin installer and run setup.exe. Click Next through the defaults and select mirror for downloading packages. Search for each package, open the appropriate category (by example Net or PHP or other), and click Skip next to each package to select it for installation.
 
-## 2. **From Cygwin 3.5.3**
+## 2. **From Cygwin 3.5.4**
 
 Please, don't forget to download socat source from <http://www.dest-unreach.org/socat/>
 
