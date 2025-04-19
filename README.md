@@ -88,7 +88,8 @@ After compilation, copy _'socat-1.8.0.1'_ directory to %ProgramFiles% or an othe
 
 Caution : Add the socat's path from environment variables, with (Windows + R, 'sysdm.cpl', advanced system settings). Close 'mintty' and reopen it.
 
-Note (from 'mintty' [cygwin] to verify the version number) : 
+Note (from 'mintty' [cygwin] to verify the version number) :
+
 ```bash
 $ socat -V
 socat by Gerhard Rieger and contributors - see www.dest-unreach.org
@@ -141,6 +142,7 @@ features:
   #define WITH_MSGLEVEL 0 /*debug*/
   #define WITH_DEFAULT_IPV 4
 ```
+
 ## 4. **Addendum**
 
 From the Mugane's comment :
